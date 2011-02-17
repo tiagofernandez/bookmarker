@@ -10,8 +10,9 @@ def main
 
   # Write output file
   output_dir = 'output'
+  output_file = "#{output_dir}/bookmarks_#{options[:key]}_#{Time.new.strftime("%Y%m%d")}.html"
   Dir.mkdir(output_dir) if not File.exist?(output_dir)
-  File.open("#{output_dir}/#{options[:key]}.html", 'w') { |f| f.write(html) }
+  File.open(output_file, 'w') { |f| f.write(html) }
 end
 
 class Bookmarker
