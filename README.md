@@ -7,9 +7,9 @@ an HTML file that can be imported by (descent) browsers, like Chrome and Firefox
 
 ## Setup
 
-		gem install rake
-		gem install rspec (optional)
-		gem install rcov (optional)
+	gem install rake
+	gem install rspec (optional)
+	gem install rcov (optional)
 
 
 ## Usage
@@ -24,7 +24,7 @@ to the Wiki you are targeting. Below a brief description:
 
 Once you have defined the options, go back to the Terminal and enter the command:
 
-		rake run
+	rake run
 
 The bookmark file should have be written to output/<key>.html. Now go ahead and
 import it into your browser. Enjoy!
